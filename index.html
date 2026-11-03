@@ -3,28 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Por uma cidade sustentável</title>
+    <title>Cidade sustentável</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <main class="caixa-principal">
-      <div class="cabecalho-jogo">
-        <div class="titulo-jogo">
-          <h1>Cidade Sustentável</h1>
-        </div>
-      </div>
-
-      <section class="caixa-perguntas">
-        <h2>Escolha sua atitude</h2>
-      </section>
-
-      <div class="caixa-alternativas"></div>
-
-      <section class="caixa-resultado">
-        <p class="texto-resultado">Resultado</p>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
-  </body>
+<body>
+     <div class="caixa-principal">
+<h1>Cidade sustentável</h1>
+<div class="tela-inicial">
+<p>
+        O planeta pede socorro. Chuvas extremas, calor intenso, rios poluídos e desertos em expansão mostram que a crise climática já está em nossa rua.
+Em busca de uma cidade mais sustentável, a comunidade precisa agir agora para salvar o planeta, começando pelo lugar onde vivemos.
+Você será parte dessa decisão.
+</p>
+<button class="iniciar-btn">Iniciar</button>
+</div>
+<div class="caixa-perguntas"></div>
+<div class="caixa-alternativas"></div>
+<div class="caixa-resultado">
+  <h2 class="titulo-resultado"></h2>
+  <p class="texto-resultado"></p>
+  <button class="novamente-btn">Recomeçar do início</button>
+  <button class="creditos-btn">Ver créditos</button>
+</div>
+<div class="tela-creditos">
+  <h2>Créditos</h2>
+  <p><strong>Jogo:</strong> Em busca de uma cidade sustentável</p>
+  <p><strong>Roteiro e programação:</strong> Benny e Layza</p>
+  <p><strong>Turma:</strong> 3ºL</p>
+  <p><strong>Escola:</strong> Colégio estadual do paraná</p>
+  <p><strong>Disciplina:</strong> Matemática II — Programação</p>
+  <p><strong>Professor:</strong> Fábio Cesar Bimbati</p>
+  <p><strong>Referências:</strong> SOUZA, E. As Cidades Mais Sustentáveis do Mundo... Blog Lixeiras, 2025. Disponível em: tinyurl.com. Acesso em: 3 nov. 2026.
+BRASIL. MMA. Cidades sustentáveis. Gov.br, 2026. Disponível em: tinyurl.com. Acesso em: 3 nov. 2026.
+BEZERRA, J. Cidades Sustentáveis. Toda Matéria, [s.d.]. Disponível em: tinyurl.com. Acesso em: 3 nov. 2026.</p>
+  <p>Obrigado por jogar!</p>
+  <button class="voltar-inicio-btn">Voltar à tela inicial</button>
+</div>
+</div>
+<script type="module" src="js/script.js"></script>
+</body>
 </html>
