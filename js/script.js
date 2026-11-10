@@ -25,6 +25,7 @@ botaoVoltarInicio.addEventListener("click", reiniciaJogo);
 function iniciaJogo() {
   reiniciaJogo();
   faseDaPartida = "jogando";
+  document.body.classList.remove("inicio");
 
   telaInicial.style.display = "none";
   caixaPerguntas.style.display = "block";
@@ -36,6 +37,8 @@ function reiniciaJogo() {
   atual = 0;
   historiaFinal = "";
   faseDaPartida = "inicio";
+  document.body.classList.remove("gameover", "vitoria", "creditos");
+  document.body.classList.add("inicio");
 
   caixaPerguntas.textContent = "";
   caixaAlternativas.replaceChildren();
@@ -118,6 +121,7 @@ function respostaSelecionada(opcaoSelecionada) {
 
 function mostraGameOver(mensagem) {
   faseDaPartida = "gameover";
+  document.body.classList.add("gameover");
   caixaPerguntas.style.display = "none";
   caixaAlternativas.replaceChildren();
   caixaAlternativas.style.display = "none";
@@ -136,6 +140,7 @@ function mostraVitoria(mensagem) {
   }
 
   faseDaPartida = "vitoria";
+  document.body.classList.add("vitoria");
   caixaPerguntas.style.display = "none";
   caixaAlternativas.replaceChildren();
   caixaAlternativas.style.display = "none";
@@ -153,6 +158,8 @@ function mostraCreditos() {
   }
 
   faseDaPartida = "creditos";
+  document.body.classList.remove("vitoria");
+  document.body.classList.add("creditos");
   telaInicial.style.display = "none";
   caixaPerguntas.style.display = "none";
   caixaAlternativas.style.display = "none";
