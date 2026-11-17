@@ -2,7 +2,7 @@
 :root {
   --c1: #606c38;
   --c2: #283618;
-  --c3: #fefae0;
+  --c3: #ffffff;
   --c4: #dda15e;
   --c5: #bc6c25;
   --c6: #526d34;
@@ -83,6 +83,7 @@ h1 {
 .tela-inicial p {
   margin: 0;
   font-size: 1.08rem;
+  font-weight: bold;
   line-height: 1.7;
   text-align: justify;
   color: var(--c3);
